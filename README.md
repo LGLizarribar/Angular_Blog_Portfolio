@@ -1,4 +1,4 @@
-# AngularJamstackUpgrade
+# FinalProjectUpgradeApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5.
 
@@ -6,22 +6,58 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Description Project
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+This is a personal portfolio showing my projects developed with Angular, PHP, Symfony, Node and React.
+It also includes a personal description and contact.
+Furthermore, in order to show some of my skills it has a page with some Angular libraries manipulation, such as Scully for the rendering.
 
-## Build
+## Run Project
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+In order to run this project, please follow the following intructions:
 
-## Running unit tests
+For dependencies installation:
+npm i
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+To run the server in localhost:4200
+ng serve
 
-## Running end-to-end tests
+To run the server through Scully in http://localhost:1668
+ng build
+npm run scully
+npm run scully:serve
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+## Run Test
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+TODO: Introducir Jest + Spectator -> Opcional
+
+## Prod Project
+
+TODO: Generar proyecto para Dist -> Subir a Prod / Netlify
+
+## Scully
+
+TODO: Como generar Scully Prod -> ng build / npm run scully / npm run scully:serve -> http://localhost:1668
+
+## Libs
+
+Swiper: Labrary for image carousel
+It's already installed, but for further installation please use this command:
+npm install ngx-swiper-wrapper
+
+//For further information, please see https://www.npmjs.com/package/ngx-swiper-wrapper
+
+Lottie: Library for animations
+It's already installed, but for further installation please use this command:
+npm install ngx-lottie-web
+
+//For further information, please see https://www.npmjs.com/package/ngx-lottie
+
+## Modules
+
+TODO: Extra -> explicar lazy-loading de modules
+
+## CSS
+
+TODO: Extra -> Arquitectura de css
