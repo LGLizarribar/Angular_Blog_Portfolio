@@ -1,0 +1,44 @@
+@import "./responsive";
+
+$desktopTitles: 1.5rem;
+$tabletTitles: 0.7rem;
+$mobileTitles: 0.5rem;
+
+$desktopText: 1rem;
+$tabletText: 0.5rem;
+$mobileText: 0.2rem;
+
+$burgerWidth: 4vh;
+$burgerBarHeight: 0.2vh;
+$burgerPosition: 0.5vh;
+
+h1 {
+  font-size: $mobileTitles;
+}
+p,
+li,
+label {
+  font-size: $mobileText;
+}
+
+@include tablet {
+  h1 {
+    font-size: $tabletTitles;
+  }
+  p,
+  li,
+  label {
+    font-size: $tabletText;
+  }
+}
+
+@include desktop {
+  h1 {
+    font-size: $desktopTitles;
+  }
+  p,
+  li,
+  label {
+    font-size: $desktopText;
+  }
+}

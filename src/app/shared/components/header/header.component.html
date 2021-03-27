@@ -1,0 +1,15 @@
+<div class="burger-menu" [class.active]="active" (click)="onBurgerClicked()">
+  <div class="burger-container">
+    <div class="burger-inner"></div>
+  </div>
+</div>
+<nav
+  class="navBar slide"
+  [ngClass]="active ? 'navBar--active' : 'navBar--inactive'"
+  [ngClass]="active ? 'slide--in' : 'slide--out'"
+>
+  <h1 [routerLink]="['/home']" class="navBar__link">HOME</h1>
+  <h1 [routerLink]="['/blog']" class="navBar__link">BLOG</h1>
+  <h1 [routerLink]="['/about']" class="navBar__link">ABOUT</h1>
+  <h1 [routerLink]="['/contact']" class="navBar__link">CONTACT</h1>
+</nav>

@@ -1,0 +1,140 @@
+@import "../../../styles/sizes";
+@import "../../../styles/fonts.scss";
+@import "../../../styles/colors.scss";
+@import "../../../styles/responsive.scss";
+
+.burger-menu {
+  width: $burgerWidth;
+  height: $burgerWidth;
+  cursor: pointer;
+  margin: $burgerPosition;
+  z-index: 1;
+
+  .burger-container {
+    position: relative;
+
+    .burger-inner {
+      position: absolute;
+      width: $burgerWidth - 2 * $burgerBarHeight;
+      left: 0px;
+      top: 10px;
+      border: $burgerBarHeight solid $thirdcolor;
+      transition: border-color 0.2s ease-in 0.2s;
+
+      &::before {
+        position: absolute;
+        content: "";
+        top: -12px;
+        left: -$burgerBarHeight;
+        width: $burgerWidth - 2 * $burgerBarHeight;
+        border: $burgerBarHeight solid $thirdcolor;
+        background: $thirdcolor;
+        transition: top 0.2s ease-in 0.3s, transform ease-in 0.2s;
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        top: 10px;
+        left: -$burgerBarHeight;
+        width: $burgerWidth - 2 * $burgerBarHeight;
+        border: $burgerBarHeight solid $thirdcolor;
+        background: $thirdcolor;
+        transition: top 0.2s ease-in 0.3s, transform ease-in 0.2s;
+      }
+    }
+  }
+
+  &.active .burger-container .burger-inner {
+    border-color: transparent;
+    transition: border-color ease-in 0.1s;
+  }
+
+  &.active .burger-container .burger-inner::before {
+    top: -$burgerBarHeight;
+    transform: rotate(-45deg);
+    transition: top ease-out 0.2s, transform 0.2s ease-out 0.3s;
+  }
+
+  &.active .burger-container .burger-inner::after {
+    top: -$burgerBarHeight;
+    transform: rotate(45deg);
+    transition: top ease-out 0.2s, transform 0.2s ease-out 0.3s;
+  }
+}
+
+.navBar {
+  &--inactive {
+    display: none;
+  }
+
+  &--active {
+    display: block;
+  }
+
+  &__link {
+    cursor: pointer;
+    font-family: "Rubik", sans-serif;
+    -webkit-text-stroke: 1.5px $thirdcolor;
+    font-weight: 900;
+    transition: 0.1s;
+    color: #ffffff;
+    margin: 1vh;
+
+    &:hover {
+      color: $thirdcolor;
+      -webkit-text-stroke: 1px $primarycolor;
+    }
+  }
+  &__link:first-child {
+    margin-top: 0;
+  }
+}
+
+.slide {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  transform: translateX(-120%);
+  -webkit-transform: translateX(-120%);
+
+  &--in {
+    animation: slide-in 0.5s forwards;
+    -webkit-animation: slide-in 0.5s forwards;
+  }
+
+  &--out {
+    animation: slide-out 0.5s forwards;
+    -webkit-animation: slide-out 0.5s forwards;
+  }
+}
+
+@keyframes slide-in {
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes slide-in {
+  100% {
+    -webkit-transform: translateX(0%);
+  }
+}
+
+@keyframes slide-out {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-120%);
+  }
+}
+
+@-webkit-keyframes slide-out {
+  0% {
+    -webkit-transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-120%);
+  }
+}
