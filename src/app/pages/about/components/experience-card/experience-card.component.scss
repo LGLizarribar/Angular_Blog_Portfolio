@@ -1,0 +1,29 @@
+@import "../../../../styles/sizes";
+@import "../../../../styles/fonts.scss";
+@import "../../../../styles/colors.scss";
+@import "../../../../styles/responsive.scss";
+
+.experience {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.experience-card {
+    width: 40%;
+    height: auto;
+    padding: 30px 0;
+
+    &__title {
+        padding-bottom: 5px;
+    }
+
+    &__company {
+        padding-bottom: 5px;
+    }
+
+    &__period {
+        padding-bottom: 5px;
+    }
+}

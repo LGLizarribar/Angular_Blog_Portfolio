@@ -1,0 +1,16 @@
+<div class="about">
+    <div class="about__title">
+        <h1>{{about.title}}</h1>
+        <p>{{about.description}}</p>
+    </div>
+    <div class="about__cards-container">
+        <div class="about__education-container">
+            <h1 class="about__subtitle">Education</h1>
+            <app-education-card [education]='about.education'></app-education-card>
+        </div>
+        <div class="about__education-container">
+            <h1 class="about__subtitle">Experience</h1>
+            <app-experience-card [experience]='about.experience'></app-experience-card>
+        </div>
+    </div>
+</div>

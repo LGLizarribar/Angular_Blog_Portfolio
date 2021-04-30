@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Image, Link, Project, Projects } from '../models/projects';
-
-import '../../../../assets/images/php-symfony-logo.png'
+import { Project, Projects } from '../models/projects';
 
 @Component({
   selector: 'app-projects',
