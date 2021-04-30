@@ -1,16 +1,22 @@
 .home {
   display: flex;
-  justify-content: center;
-  &__animation {
-    z-index: -1;
-    position: absolute;
+  justify-content: space-around;
+  width: 85%;
+  margin: 0 auto;
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: inherit;
   }
   &__content {
     top: 50%;
     left: 40%;
+
   }
   &__slider {
-    width: 100%;
+    width: 60%;
     height: auto;
     position: absolute;
     top: 50%;
