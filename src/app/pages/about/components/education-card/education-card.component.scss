@@ -1,0 +1,25 @@
+@import "../../../../styles/sizes";
+@import "../../../../styles/fonts.scss";
+@import "../../../../styles/colors.scss";
+@import "../../../../styles/responsive.scss";
+
+.education {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.education-card {
+    width: 40%;
+    height: auto;
+    padding: 30px 0;
+
+    &__title {
+        padding-bottom: 5px;
+    }
+
+    &__school {
+        padding-bottom: 5px;
+    }
+}
