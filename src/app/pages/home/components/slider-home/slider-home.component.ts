@@ -15,9 +15,9 @@ import {
 })
 export class SliderHomeComponent implements OnInit {
   public slides = [
-    'https://fondosmil.com/fondo/23629.jpg',
-    'https://free4kwallpapers.com/uploads/originals/2020/09/19/star-wars-the-mandalorian-wallpaper.jpg',
-    'https://fondosmil.com/fondo/23596.jpg',
+    '../../../../../assets/images/maleteo.png',
+    '../../../../../assets/images/maleteo2.png',
+    '../../../../../assets/images/catApp.png',
   ];
 
   public show: boolean = true;

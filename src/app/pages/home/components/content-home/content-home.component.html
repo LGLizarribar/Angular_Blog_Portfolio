@@ -1,15 +1,15 @@
 <div class="content">
-  <h1>Bienvenidos a mi Angular-app</h1>
-  <div>
-    <h2>Skills:</h2>
-    <ul>
-      <li>Angular</li>
-      <li>Node</li>
-      <li>React</li>
-      <li>Git</li>
-      <li>Js</li>
-      <li>Html</li>
-      <li>Css</li>
-    </ul>
+  <h1>{{intro.welcomeMessage}}</h1>
+  <div class="content__container">
+    <span class="content__left-block">
+      <h2>I'm {{intro.myName}}</h2>
+      <h3>{{intro.title}}</h3>
+    </span>
+    <span class="content__right-block">
+      <h3>Skills:</h3>
+      <ul class="content__skill-list">
+        <li class="content__skill-item" *ngFor="let skill of intro.skills">{{skill}}</li>
+      </ul>
+    </span>
   </div>
 </div>

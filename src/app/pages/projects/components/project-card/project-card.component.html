@@ -1,0 +1,9 @@
+<div class="projects">
+    <div class="project-card" *ngFor="let project of projects">
+        <img class="project-card__img" src="{{project.projectImg.img}}" alt="{{project.projectImg.imgDesc}}">
+        <h1>{{project.projectTitle}}</h1>
+        <p>{{project.projectDesc}}</p>
+        <a class="project-card__link" target="_blank" href="{{project.projectLink.linkUrl}}">{{project.projectLink.linkDesc}}</a>
+        <a class="project-card__link" target="_blank" href="{{project.herokuLink.linkUrl}}">{{project.herokuLink.linkDesc}}</a>
+    </div>
+</div>

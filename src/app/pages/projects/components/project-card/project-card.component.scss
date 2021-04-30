@@ -1,0 +1,27 @@
+@import "../../../../styles/sizes";
+@import "../../../../styles/fonts.scss";
+@import "../../../../styles/colors.scss";
+@import "../../../../styles/responsive.scss";
+
+.projects{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.project-card {
+    width: 300px;
+    height: auto;
+    padding: 30px 0;
+
+    &__img {
+        max-width: 100px;
+    }
+    
+    &__link {
+        text-decoration: none;
+        color: orange;
+        margin-right: 30px;
+    }
+}

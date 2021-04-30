@@ -5,4 +5,35 @@
 
 .content {
   font-family: $main-font;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  &__left-block {
+    padding: 20px 0;
+    align-self: center;
+  }
+
+  &__skill-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+
+  &__skill-item {
+      list-style: none;
+      padding-right: 10px;
+
+      &::after {
+        content: '|';
+        margin-left: 5px;
+        width: 1px;
+        height: 5px;
+      };
+  }
+
 }
