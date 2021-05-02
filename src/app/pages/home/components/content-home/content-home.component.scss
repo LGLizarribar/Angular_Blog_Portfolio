@@ -17,6 +17,10 @@
     align-self: center;
   }
 
+  &__right-block {
+    padding-top: 10px;
+  }
+
   &__skill-list {
     display: flex;
     flex-direction: row;

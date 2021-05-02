@@ -1,19 +1,26 @@
 @import "./responsive";
 
 $desktopTitles: 1.5rem;
-$tabletTitles: 0.7rem;
-$mobileTitles: 0.5rem;
+$tabletTitles: 1rem;
+$mobileTitles: 0.7rem;
+
+$desktopSubtitles: 1.25rem;
+$tabletSubtitles: 0.85rem;
+$mobileSubtitles: 0.5rem;
 
 $desktopText: 1rem;
-$tabletText: 0.5rem;
-$mobileText: 0.2rem;
+$tabletText: 0.7rem;
+$mobileText: 0.5rem;
 
 $burgerWidth: 4vh;
 $burgerBarHeight: 0.2vh;
 $burgerPosition: 0.5vh;
 
-h1 {
+h1, h2 {
   font-size: $mobileTitles;
+}
+h3 {
+  font-size: $mobileSubtitles;
 }
 p,
 li,
@@ -22,8 +29,11 @@ label {
 }
 
 @include tablet {
-  h1 {
+  h1, h2 {
     font-size: $tabletTitles;
+  }
+  h3 {
+    font-size: $tabletSubtitles;
   }
   p,
   li,
@@ -33,8 +43,11 @@ label {
 }
 
 @include desktop {
-  h1 {
+  h1, h2 {
     font-size: $desktopTitles;
+  }
+  h3 {
+    font-size: $desktopSubtitles;
   }
   p,
   li,

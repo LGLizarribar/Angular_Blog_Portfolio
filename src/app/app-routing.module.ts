@@ -13,11 +13,6 @@ const routes: Routes = [
       import('./pages/home/home.module').then((m) => m.HomeModule),
   },
   {
-    path: 'blog',
-    loadChildren: () =>
-      import('./pages/blog/blog.module').then((m) => m.BlogModule),
-  },
-  {
     path: 'projects',
     loadChildren: () =>
       import('./pages/projects/projects.module').then((m) => m.ProjectsModule),
@@ -27,6 +22,7 @@ const routes: Routes = [
     loadChildren: () =>
       import('./pages/about/about.module').then((m) => m.AboutModule),
   },
+  { path: 'blog', loadChildren: () => import('./pages/blog/blog.module').then(m => m.BlogModule) },
 ];
 
 @NgModule({
