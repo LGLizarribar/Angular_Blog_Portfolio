@@ -1,10 +1,18 @@
+@import "../../../styles/sizes";
+@import "../../../styles/fonts.scss";
+@import "../../../styles/colors.scss";
+@import "../../../styles/responsive.scss";
+
 .home {
   display: flex;
   justify-content: space-around;
   width: 85%;
   margin: 0 auto;
+  padding-bottom: 100px;
+  background-color: $secondarycolor;
 
   &__header {
+    padding-top: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -16,9 +24,10 @@
 
   }
   &__slider {
-    width: 60%;
+    margin-top: 100px;
+    width: 75%;
     height: auto;
     position: absolute;
-    top: 50%;
+    top: 55%;
   }
 }

@@ -1,3 +1,14 @@
 <!-- This is where Scully will inject the static HTML -->
-<div class="blog-post">
+<div class="blog-post-list">
+    <ul class="blog-post-list__list">
+        <li *ngFor="let post of posts$ | async">
+            <a [routerLink]="post.route">
+                <app-card
+                    [title]='post.title'
+                    [author]='post.authors'
+                    [description]='post.description'
+                ></app-card>
+            </a>
+        </li>
+    </ul>
 </div>

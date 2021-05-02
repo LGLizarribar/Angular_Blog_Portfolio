@@ -1,6 +1,6 @@
 <swiper [config]="config">
-  <div *ngFor="let slide of slides">
-    <div fxLayout="column" fxLayoutAlign="center center">
+  <div class="slider-element" *ngFor="let slide of slides">
+    <div fxLayout="column" fxLayoutAlign="center bottom">
       <img class="b-img" src="{{ slide }}" />
     </div>
   </div>
